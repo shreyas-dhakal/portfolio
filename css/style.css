@@ -251,7 +251,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-yellow);
+  background: white;
   border-radius: 3px;
 }
 
@@ -266,7 +266,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--orange-yellow-crayola);
+  background: white;
   border-radius: 5px;
 }
 
@@ -485,7 +485,7 @@ main {
 .navbar-link:hover,
 .navbar-link:focus { color: var(--light-gray-70); }
 
-.navbar-link.active { color: var(--orange-yellow-crayola); }
+.navbar-link.active { color: whitesmoke; }
 
 
 
@@ -796,7 +796,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
+  color: whitesmoke;
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -1878,5 +1878,31 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
-
+  #bg-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure SVG is behind the main content */
+  }
+  .service-item {
+    transition: transform 0.3s, background-color 0.3s;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .service-item:hover {
+    background-color: #f0f0f0; /* Change to any color you like */
+    transform: scale(1.05); /* Slightly increase the size */
+  }
+  
+  .service-icon-box img {
+    transition: transform 0.3s;
+  }
+  
+  .service-item:hover .service-icon-box img {
+    transform: scale(1.2); /* Slightly increase the icon size */
+  }
+  
 }

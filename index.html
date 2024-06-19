@@ -26,7 +26,38 @@
 </head>
 
 <body>
-
+  <div id="bg-wrap">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+    <defs>
+    <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5"><animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop><stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop></radialGradient>
+    <radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5"><animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(255, 255, 0, 0)"></stop></radialGradient>
+    <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5"><animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop></radialGradient>
+    <radialGradient id="Gradient4" cx="50%" cy="50%" fx="4.56417%" fy="50%" r=".5"><animate attributeName="fx" dur="23s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 0, 0)"></stop></radialGradient>
+    <radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5"><animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop><stop offset="100%" stop-color="rgba(0,0,255, 0)"></stop></radialGradient>
+    <radialGradient id="Gradient6" cx="50%" cy="50%" fx="0.981338%" fy="50%" r=".5"><animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255,0,0, 1)"></stop><stop offset="100%" stop-color="rgba(255,0,0, 0)"></stop></radialGradient>
+    </defs>
+    <!--<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient4)">
+    <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
+    <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient5)">
+    <animate attributeName="x" dur="23s" values="0%;-25%;0%" repeatCount="indefinite" />
+    <animate attributeName="y" dur="24s" values="25%;-25%;25%" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient6)">
+    <animate attributeName="x" dur="25s" values="-25%;0%;-25%" repeatCount="indefinite" />
+    <animate attributeName="y" dur="26s" values="0%;-25%;0%" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"/>
+    </rect>-->
+    <rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s" repeatCount="indefinite"></animateTransform></rect>
+    <rect x="-2.17916%" y="35.4267%" width="100%" height="100%" fill="url(#Gradient2)" transform="rotate(255.072 50 50)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s" repeatCount="indefinite"></animateTransform>
+    </rect>
+    <rect x="9.00483%" y="14.5733%" width="100%" height="100%" fill="url(#Gradient3)" transform="rotate(139.903 50 50)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate><animate attributeName="y" dur="12s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="9s" repeatCount="indefinite"></animateTransform>
+    </rect>
+    </svg>
+  </div>
   <!--
     - #MAIN
   -->
@@ -48,7 +79,7 @@
         <div class="info-content">
           <h1 class="name" title="Shreyas Dhakal">Shreyas Dhakal</h1>
 
-          <p class="title">Python | Machine Learning | AI</p>
+          <p class="title">Machine Learning | AI | Web</p>
          
         </div>
 
@@ -163,13 +194,6 @@
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
@@ -194,9 +218,9 @@
 
         <section class="about-text">
           <p>
-            <strong>Hi! and welcome to the page.</strong> I am Shreyas, A computer engineering student at Khwopa College of Engineering, currently studying in my final year. I am a Nepali by nationality. I have worked in internship in SMTM Capital, dealing with time-series analysis of stock markets and big data using Machine Learning. I have hands-on experience with Data Engineering and experience with Database. I also have projects on various applications of Machine Learning and Artificial Intelligence. <br><br>
-            <strong> My interests,</strong> however, extend beyond the programming and I love helping people with designing, backend development and team collaboration. I even engage with few people of opposite views to be in a healthy debate.<br><br>
-            <i>Things I do</i> When I'm not doing computer stuff, I'd probably be reading books, being entertained with either Netflix or Spotify, or playing games. Else i could look for possible opportunities where I can learn and can take collaborative team leadership responsibities, and gain experience with managing tech fields. 
+            <strong>Hi! and welcome to my page.</strong> I am Shreyas, a computer engineering undergraduate from Tribhuvan University. I am very eager to develop my skills in Artificial Intelligence and Machine Learning. I have market level experience in applying machine learning in real-time data as well as web development in various programming languages. I also have projects on various applications of Machine Learning and Artificial Intelligence. <br><br>
+            <strong> My interests,</strong> however, extend beyond the programming and I love helping people with designing, backend development and team collaboration.<br><br>
+            When I'm not doing computer stuff, I'd probably be reading books, listening to variety of music, or playing games. Otherwise I could be looking for possible opportunities where I can learn and can take collaborative team leadership responsibities, and gain experience with managing tech fields. 
           </p>
         </section>
 
@@ -215,7 +239,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="images/icon-dev.svg" alt="Machine Learning Icon" width="40">
+                <img src="images/belt.png" alt="Machine Learning Icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -231,7 +255,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="images/icon-os.svg" alt="AI icon" width="40">
+                <img src="images/artificial-intelligence.png" alt="AI icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -239,6 +263,21 @@
 
                 <p class="service-item-text">
                   Using AI tools and techniques in various fields.
+                </p>
+              </div>
+
+            </li>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/browser.png" alt="Web" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+
+                <p class="service-item-text">
+                  Backend and frontend development.
                 </p>
               </div>
 
@@ -279,39 +318,55 @@
 
             <li class="clients-item">
               <a href="#">
-                <img src="images/logo-1-color.png" alt="client logo">
+                <img src="images/python.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/tensorflow.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/scikit.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/pandas.svg" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/numpy.svg" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/node.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/mysql.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/redis.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/php.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/laravel.png" alt="client logo">
               </a>
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="images/cloud.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
 
           </ul>
 
@@ -323,9 +378,7 @@
 
 
 
-      <!--
-        - #RESUME
-      -->
+
 
       <article class="resume" data-page="resume">
 
