@@ -48,6 +48,11 @@ for (let i = 0; i < testimonialsItem.length; i++) {
   });
 
 }
+$(document).ready(function () {
+  if (!$.browser.webkit) {
+      $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+  }
+});
 
 // add click event to modal close button
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
