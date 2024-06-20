@@ -501,35 +501,39 @@
       var closeModal = document.getElementById('closeModal');
       var contactForm = document.getElementById('contactForm');
       var mainContent = document.getElementById('mainContent');
-  
+    
       contactBtn.onclick = function () {
         modal.style.display = "block";
+        mainContent.classList.add('blur'); // Optional: blur background content
       }
-  
+    
       closeModal.onclick = function () {
         modal.style.display = "none";
+        mainContent.classList.remove('blur'); // Optional: remove blur from background content
       }
-  
+    
       window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
+          mainContent.classList.remove('blur'); // Optional: remove blur from background content
         }
       }
-  
+    
       contactForm.onsubmit = function (event) {
         event.preventDefault();
         var formData = new FormData(contactForm);
         var fullname = formData.get('fullname');
         var email = formData.get('email');
         var message = formData.get('message');
-  
+    
         var mailtoLink = `mailto:dhakalshreyas2@gmail.com?subject=Contact Form Submission from ${fullname}&body=${message} (From: ${email})`;
-  
+    
         window.location.href = mailtoLink;
         modal.style.display = "none";
-        mainContent.classList.remove('blur');
+        mainContent.classList.remove('blur'); // Optional: remove blur from background content
       }
     });
+    
   </script>
 </body>
 
